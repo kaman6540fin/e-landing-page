@@ -126,26 +126,24 @@
 .banner .bg {
   width: 100vw;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
 }
 
-.banner .bg img {
-  vertical-align: middle;
+.banner .bg .bg-img {
   height: 700px;
-  /* ie10 不支援 */
-  /* object-fit: cover;
-  object-position: center center; */
+  background-image: url("../images/banner1920*650.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 1200px) {
-  .banner .bg img {
+  .banner .bg .bg-img {
     height: 600px;
   }
 }
 
 @media (max-width: 992px) {
-  .banner .bg img {
+  .banner .bg .bg-img {
     height: 500px;
   }
 }
