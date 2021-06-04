@@ -127,65 +127,55 @@
   width: 100%;
   overflow: hidden;
 }
-
 .banner .bg .bg-img {
-  height: 700px;
+  height: 650px;
   background-image: url("../images/banner1920*650.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.banner .bg-phone .bg-phone-img {
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .banner .bg .bg-img {
-    height: 600px;
+    height: 565px;
   }
 }
-
 @media (max-width: 992px) {
   .banner .bg .bg-img {
-    height: 500px;
+    height: 445px;
   }
-}
-
-.banner .bg-phone .bg-phone-img {
-  display: none;
 }
 
 .banner .text {
   max-width: 1200px;
   margin: 0 auto;
-  /* position: absolute;
-  left: 0;
-  right: 0;
-  top: 17%; */
   padding-left: 15px;
-  padding-top: 120px;
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
-
 .banner .text .title {
-  width: 55%;
+  width: 60%;
 }
-
 .banner .text .sub {
   width: 42%;
   margin-top: 20px;
 }
-
-/* banner RWD start */
 @media (max-width: 1200px) {
-  .banner .text .title {
-    max-width: 65%;
+  .banner .text {
+    padding-top: 78px;
   }
-
-  .banner .text .sub {
-    max-width: 50%;
-    margin-top: 15px;
+}
+@media (max-width: 992px) {
+  .banner .text {
+    padding-top: 70px;
   }
 }
 
+/* banner RWD start */
 @media (max-width: 767px) {
   .banner .bg img {
     display: none;
