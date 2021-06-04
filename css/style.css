@@ -134,7 +134,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.banner .bg-phone .bg-phone-img {
+.banner .bg .bg-phone-img {
   display: none;
 }
 
@@ -148,11 +148,26 @@
     height: 445px;
   }
 }
+@media (max-width: 767px) {
+  .banner .bg .bg-img {
+    display: none;
+  }
+  .banner .bg .bg-phone-img {
+    /* 自動符合背景高度 */
+    padding-bottom: 95%;
+    display: block;
+    background-image: url("../images/banner640*1000.jpg");
+    background-position: center 95%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 .banner .text {
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
@@ -174,36 +189,19 @@
     padding-top: 70px;
   }
 }
-
-/* banner RWD start */
 @media (max-width: 767px) {
-  .banner .bg img {
-    display: none;
-  }
-  .banner .bg-phone img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    object-position: center 58%;
-  }
-
   .banner .text {
-    max-width: 100%;
-    top: 8vh;
-    padding: 0 15px;
+    padding-top: 35px;
   }
-
   .banner .text .title {
-    max-width: 100%;
+    width: 100%;
   }
-
   .banner .text .sub {
-    max-width: 80%;
-    margin-top: 2vh;
+    width: 80%;
+    margin-top: 15px;
   }
 }
 
-/* banner RWD end */
 /* banner end */
 
 /*content part1  start*/
@@ -633,7 +631,7 @@
   width: 100%;
 }
 
-.calculator .slider .cal-slider {
+.calculator .slider .cal-slider::-webkit-slider-runnable-track {
   width: 100%;
   background: #ffffff;
   height: 15px;
@@ -650,6 +648,48 @@
   box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2);
   cursor: pointer;
 }
+
+/* ie slider css  start*/
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 15px;
+  margin: 15px 0 18px 0;
+
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+
+  /*remove default tick marks*/
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ffffff;
+  border-radius: 15px;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ffba00;
+  border-radius: 15px;
+}
+input[type="range"]::-ms-thumb {
+  border: 8px solid #ffba00;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  /* border-radius: 50%;
+  box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2); */
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ffba00;
+}
+/* ie slider css end */
 
 .range .min {
   float: left;
