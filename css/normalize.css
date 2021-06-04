@@ -357,6 +357,7 @@ input:focus {
 }
 
 input[type="range"] {
+  width: 100%;
   -webkit-appearance: none;
   appearance: none;
   outline: none; /* 避免點選會有藍線或虛線 */
