@@ -124,7 +124,7 @@
 }
 
 .banner .bg {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -148,24 +148,25 @@
   }
 }
 
-.banner .bg-phone img {
+.banner .bg-phone .bg-phone-img {
   display: none;
 }
 
 .banner .text {
   max-width: 1200px;
-  position: absolute;
   margin: 0 auto;
+  /* position: absolute;
   left: 0;
   right: 0;
-  top: 17%;
+  top: 17%; */
   padding-left: 15px;
+  padding-top: 120px;
   display: flex;
   flex-direction: column;
 }
 
 .banner .text .title {
-  max-width: 58%;
+  width: 55%;
 }
 
 .banner .text .sub {
