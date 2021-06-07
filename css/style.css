@@ -631,7 +631,9 @@
   width: 100%;
 }
 
-/* ie slider css  start*/
+/* slider css  start*/
+
+/* firefox */
 
 .calculator .slider .cal-slider::-moz-range-track {
   width: 100%;
@@ -651,29 +653,37 @@
   cursor: pointer;
 }
 
+/* IE 瀏覽器 */
+
 .calculator .slider .cal-slider::-ms-track {
   width: 100%;
   background: transparent;
-  height: 15px;
+  height: 40px;
   border-radius: 15px;
   margin: 15px 0 18px 0;
 }
 
 .calculator .slider .cal-slider::-ms-fill-lower {
-  background: #777;
-  border-radius: 10px;
+  background: rgb(194, 194, 194);
+  border-radius: 15px 0 0 15px;
+  height: 20px;
+}
+
+.calculator .slider .cal-slider::-ms-fill-upper {
+  background: #ffca39;
+  border-radius: 0 15px 15px 0;
+  height: 20px;
 }
 
 .calculator .slider .cal-slider::-ms-thumb {
-  width: 40px;
-  height: 40px;
-  border: 8px solid #ffba00;
-  background: #ffffff;
+  width: 25px;
+  height: 25px;
+  background: #ffba00;
   border-radius: 50%;
-  box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2);
   cursor: pointer;
 }
 
+/* chrome */
 .calculator .slider .cal-slider {
   width: 100%;
   background: #ffffff;
@@ -683,15 +693,16 @@
 }
 
 .calculator .slider .cal-slider::-webkit-slider-thumb {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   border: 8px solid #ffba00;
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2);
   cursor: pointer;
 }
-/* ie slider css end */
+
+/* slider css end */
 
 .range .min {
   float: left;
