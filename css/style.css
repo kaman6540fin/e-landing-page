@@ -681,6 +681,8 @@
   height: 40px;
   border-radius: 15px;
   margin: 15px 0 18px 0;
+  border: none;
+  color: transparent;
 }
 
 .calculator .slider .cal-slider::-ms-fill-lower {
@@ -696,8 +698,8 @@
 }
 
 .calculator .slider .cal-slider::-ms-thumb {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   background: #ffba00;
   border-radius: 50%;
   cursor: pointer;
