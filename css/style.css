@@ -653,6 +653,26 @@
   cursor: pointer;
 }
 
+/* chrome */
+.calculator .slider .cal-slider::-webkit-slider-runnable-track {
+  width: 100%;
+  background: #ffffff;
+  height: 20px;
+  border-radius: 15px;
+  margin: 15px 0 18px 0;
+}
+
+.calculator .slider .cal-slider::-webkit-slider-thumb {
+  width: 40px;
+  height: 40px;
+  border: 8px solid #ffba00;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2);
+  cursor: pointer;
+  margin-top: -10px;
+}
+
 /* IE 瀏覽器 */
 
 .calculator .slider .cal-slider::-ms-track {
@@ -664,13 +684,13 @@
 }
 
 .calculator .slider .cal-slider::-ms-fill-lower {
-  background: rgb(194, 194, 194);
+  background: #ffca39;
   border-radius: 15px 0 0 15px;
   height: 20px;
 }
 
 .calculator .slider .cal-slider::-ms-fill-upper {
-  background: #ffca39;
+  background: rgb(194, 194, 194);
   border-radius: 0 15px 15px 0;
   height: 20px;
 }
@@ -680,25 +700,6 @@
   height: 25px;
   background: #ffba00;
   border-radius: 50%;
-  cursor: pointer;
-}
-
-/* chrome */
-.calculator .slider .cal-slider {
-  width: 100%;
-  background: #ffffff;
-  height: 15px;
-  border-radius: 15px;
-  margin: 15px 0 18px 0;
-}
-
-.calculator .slider .cal-slider::-webkit-slider-thumb {
-  width: 25px;
-  height: 25px;
-  border: 8px solid #ffba00;
-  background: #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 5px 7px rgba(00, 00, 00, 0.2);
   cursor: pointer;
 }
 
