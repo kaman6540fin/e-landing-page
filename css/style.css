@@ -653,10 +653,15 @@
 
 .calculator .slider .cal-slider::-ms-track {
   width: 100%;
-  background: #ffffff;
+  background: transparent;
   height: 15px;
   border-radius: 15px;
   margin: 15px 0 18px 0;
+}
+
+.calculator .slider .cal-slider::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px;
 }
 
 .calculator .slider .cal-slider::-ms-thumb {
