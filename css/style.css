@@ -1244,10 +1244,11 @@
 
 /* btn arrow setting*/
 
-.big-card .card-content .btn img {
+.big-card .card-content .btn svg {
   width: 3em;
   margin-left: 1.5em;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
+  fill: #044a8b;
 }
 @media (max-width: 767px) {
   .big-card .card-content .btn img {
@@ -1255,20 +1256,8 @@
   }
 }
 
-.big-card .card-content .btn img.arrow-blue {
-  display: inline;
-}
-
-.big-card .card-content .btn img.arrow-yellow {
-  display: none;
-}
-
-.big-card .card-content .btn:hover img.arrow-blue {
-  display: none;
-}
-
-.big-card .card-content .btn:hover img.arrow-yellow {
-  display: inline;
+.big-card .card-content .btn:hover svg {
+  fill: #ffba00;
 }
 
 /* content part4  end */
