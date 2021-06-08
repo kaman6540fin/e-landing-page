@@ -1245,6 +1245,7 @@
 /* btn arrow setting*/
 
 .big-card .card-content .btn svg {
+  height: 10px;
   width: 3em;
   margin-left: 1.5em;
   margin-bottom: 5px;
