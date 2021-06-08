@@ -69,5 +69,5 @@ $(document).ready(function(){
   $('html,body').animate({scrollTop:0},300)
 })
 
- 
+ console.log('有讀到我喔')
 });
