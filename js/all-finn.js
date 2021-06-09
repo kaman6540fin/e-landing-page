@@ -15,7 +15,13 @@ $(document).ready(function(){
     sliderId.on('input',function(){
       inputId.val(sliderId.val());
     })
+    sliderId.on('change',function(){
+      inputId.val(sliderId.val());
+    })
     inputId.on('input',function(){
+      sliderId.val(inputId.val());
+    })
+    inputId.on('change',function(){
       sliderId.val(inputId.val());
     })
   }
