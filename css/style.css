@@ -692,7 +692,7 @@
 }
 
 .calculator .slider .cal-slider::-ms-fill-upper {
-  background: rgb(194, 194, 194);
+  background: #ffffff;
   border-radius: 0 15px 15px 0;
   height: 20px;
 }
